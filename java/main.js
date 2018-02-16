@@ -25,11 +25,11 @@ scene.add(earthMesh)
 
 // ADDING EARTH TEXTURE
 
-material.map    = THREE.ImageUtils.loadTexture('Images/earthmap1k.jpg')
+material.map    = THREE.TextureLoader('Images/earthmap1k.jpg')
 
 // ADDING BUMP TEXTURE
 
-material.bumpMap    = THREE.ImageUtils.loadTexture('Images/earthbump1k.jpg')
+material.bumpMap    = THREE.TextureLoader('Images/earthbump1k.jpg')
 material.bumpScale = 0.05
 
 // FINISH SCENE SETUP
