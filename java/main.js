@@ -49,7 +49,7 @@ function render() {
 	// camera.position.z = Math.cos(delta) * 20;
 	
 	// rotate the cube around its center	
-	cube.rotation.y -= .03;
+	earthMesh.rotation.y -= .03;
 		
 	renderer.render(scene, camera);
 	
