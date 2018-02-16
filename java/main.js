@@ -32,3 +32,26 @@ material.map    = THREE.ImageUtils.loadTexture('Images/earthmap1k.jpg')
 material.bumpMap    = THREE.ImageUtils.loadTexture('Images/earthbump1k.jpg')
 material.bumpScale = 0.05
 
+// FINISH SCENE SETUP
+
+document.body.appendChild(renderer.domElement);
+
+render();
+
+var delta = 0;
+function render() {
+	
+	// pan the camera around the scene center	
+	// delta += 0.1;
+	// camera.lookAt(floor.position);
+	// camera.position.x = Math.sin(delta) * 20;
+	// camera.position.y = 20;
+	// camera.position.z = Math.cos(delta) * 20;
+	
+	// rotate the cube around its center	
+	cube.rotation.y -= .03;
+		
+	renderer.render(scene, camera);
+	
+	requestAnimationFrame(render);
+}
